@@ -102,20 +102,21 @@ export default function ShowDetails({ show }: ShowDetailsProps) {
 
   return (
     <div className="bg-white max-w-[1008px]  w-full rounded-[16px_16px_0px_0px] overflow-hidden mx-auto pb-40  max-sm:pb-20 shadow-xl mt-16 max-lg:max-w-[90%] max-sm:max-w-[92%]">
-      <div className="relative rounded-[16px_16px_0px_0px] overflow-hidden">
+      <div className="relative ">
         <PosterImage
           src={show?.banner?.src || "/video-poster-placeholder-image.jpg"}
           alt={show?.name}
           hash={show?.banner?.hash}
           width={1920}
           height={500}
-          className={`w-full h-[500px] object-cover object-center transform transition-transform ease-in-out duration-700 ${
+          className={`w-full h-[500px] object-cover object-center transform transition-transform ease-in-out duration-700 rounded-[16px_16px_0px_0px] overflow-hidden ${
             isLoaded ? "opacity-100 scale-100" : "opacity-0 scale-105"
           }`}
           onLoad={() => setIsLoaded(true)}
           layout="responsive"
         />
-        <div className="px-[48px] py-6 bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_1.89%,rgba(0,0,0,0.03)_121.51%)] backdrop-blur-[13px] absolute max-md:relative bottom-0 left-0 w-full max-lg:p-5 ">
+        <div className="px-[48px] py-6 bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_1.89%,rgba(0,0,0,0.03)_121.51%)]  absolute max-md:relative bottom-0 left-0 w-full max-lg:p-5 ">
+          <div className="product-header__blur"></div>
           <div className="flex justify-between items-end max-lg:flex-wrap max-lg:gap-[16px_0]">
             <div className="w-full max-w-2xl max-lg:max-w-full max-sm:flex-wrap">
               <div className="flex gap-[0_8px] pb-2 max-sm:flex-col max-sm:flex-wrap max-sm:gap-2 ">

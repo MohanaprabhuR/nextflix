@@ -252,7 +252,9 @@ export default function ShowModal({ show, initialData }: ShowModalProps) {
                     }`}
                   />
 
-                  <div className="px-[48px] py-6 bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_1.89%,rgba(0,0,0,0.03)_121.51%)]  backdrop-blur-[13px] absolute bottom-0 left-0 w-full max-md:relative max-lg:p-5">
+                  <div className="px-[48px] py-6 bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_1.89%,rgba(0,0,0,0.03)_121.51%)]   absolute bottom-0 left-0 w-full max-md:relative max-lg:p-5">
+                    <div className="product-header__blur"></div>
+
                     <div className="flex justify-between items-end max-lg:flex-wrap max-lg:gap-[16px_0]">
                       {isLoading ? (
                         <div className="w-1/2 space-y-2 animate-pulse">
