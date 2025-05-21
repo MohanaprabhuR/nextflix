@@ -113,8 +113,7 @@ const HeroCarousel: React.FC<CarouselProps> = ({ heroCarousel }) => {
                   />
                 </figure>
 
-                <div className="px-[48px] pb-6 pt-20 bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_1.89%,rgba(0,0,0,0.03)_121.51%)]  absolute bottom-0 left-0 w-full max-lg:px-4 max-lg:py-6 max-md:relative">
-                  <div className="product-header__blur"></div>
+                <div className="px-[48px] py-6  bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_1.89%,rgba(0,0,0,0.03)_121.51%)] backdrop-blur-[13px]  absolute bottom-0 left-0 w-full max-lg:px-4 max-lg:py-6 max-md:relative">
                   <div className="w-full max-w-3xl z-10 relative">
                     <h2 className="text-white text-2xl font-semibold leading-[115%] pb-4 max-md:text-black">
                       {carousel.name}
